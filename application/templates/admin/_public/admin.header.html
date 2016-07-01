@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+<base id="base_url" href="{$base_url}">
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+{$SEO.metas}
+{$SEO.title}
+
+<!-- JavaScript resources -->
+<!--[if lt IE 9]>
+{res file='script:libs/html5.js'}
+{res file='script:libs/respond.min.js'}
+{res file='script:libs/PIE-2.0beta1/PIE_IE678.js'}
+<![endif]-->
+{res file='script:libs/require/require.js'}
+{res file='script:libs/require/require.config.js'}
+
+
+<!-- Stylesheet resources -->
+{res file='link:h-ui/css/H-ui.min.css'}
+{res file='link:h-ui/css/style.css'}
+{res file='link:h-ui/skin/default/skin.css'}
+{res file='link:h-ui/font/iconfont.css'}
+
+{res file='link:css/admin/common.css'}
+
+{if $WL_APPEND_RES}
+    {foreach $WL_APPEND_RES as $f=>$res}
+		{$res}    
+    {/foreach}
+{/if}
+<!-- import resources -->
+{$all_import_res}
+</head>
+<body>
+
+

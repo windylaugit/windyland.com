@@ -1,0 +1,23 @@
+{include file="admin.header.html"}
+{include file="admin.nav.html"}
+
+
+<div class="page-container">
+	<div class="cl pd-5 bg-1 bk-gray">
+    	<span class="l">
+        	<a href="javascript:;" class="btn btn-danger radius"><i class="Hui-iconfont">&#xe6e2;</i> 批量删除</a>
+            <a href="javascript:;" class="btn btn-primary radius" id="j_add"><i class="Hui-iconfont">&#xe600;</i>&nbsp;{$lang.pub_download}</a>
+        </span>
+   	</div>
+    <div class="mt-20">
+    	<div class="table-responsive" id="j_download_list">
+            	
+        </div>
+    </div>
+</div>
+
+<script>
+	require(['admin/content/download.index']);
+</script>
+
+{include file="admin.footer.html"}

@@ -1,0 +1,52 @@
+{include file="admin.header.html"}
+<article class="page-container">
+	<form class="form form-horizontal" id="j_form">
+		<div class="row row-field cl">
+			<label class="form-label col-xs-4 col-sm-2" for="field_c_name"><span class="c-red">*</span>{$lang.fields.c_name}：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text"  name="c_name" class="input-text" value="{$col.c_name}" id="field_c_name" placeholder="输入栏目的名称" >
+			</div>
+		</div>
+		
+        <div class="row row-field cl">
+			<label class="form-label col-xs-4 col-sm-2" for="field_alias"><span class="c-red">*</span>{$lang.fields.alias}：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text"  name="alias" class="input-text" value="{$col.alias}" id="field_alias" placeholder="输入栏目的别称" >
+			</div>
+		</div>
+        
+        <div class="row row-field cl">
+            <label class="form-label col-xs-4 col-sm-2" for="field_parent_id">{$lang.fields.parent_id}：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+            	<span class="select-box">
+                <select class="select" name="parent_id" id="field_parent_id">
+                    {foreach $colOptions as $k=>$v}
+                    <option value={$k} {$v.selected}>{$v.text}</option>
+                    {/foreach}
+                </select>
+                </span>
+            </div>
+        </div>
+        
+        <div class="row row-field cl">
+			<label class="form-label col-xs-4 col-sm-2" for="field_sort_order"><span class="c-red">*</span>{$lang.fields.sort_order}：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text"  name="sort_order" class="input-text" value="{$col.sort_order}" id="field_alias" placeholder="值越小越靠前,默认255" >
+			</div>
+		</div>
+        
+        <div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+				<button class="btn btn-primary radius" type="button" id="j_submit"><i class="Hui-iconfont">&#xe632;</i>&nbsp;{$lang.save}</button>
+				<button class="btn btn-default radius" type="button" id="j_cancel">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+			</div>
+		</div>
+	</form>
+</article>
+
+
+<script>
+	require(['admin/page.column.add']);
+</script>
+
+{include file="admin.footer.html"}

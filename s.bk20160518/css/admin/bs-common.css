@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+
+
+/** forms **/
+.form-horizontal .control-label{
+	padding-top: 7px;
+	margin-bottom: 0;
+	text-align: right;	
+}

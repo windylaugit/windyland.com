@@ -1,0 +1,33 @@
+{res file='link:css/admin/config.index.css' append=1}
+{include file="admin.header.html"}
+{include file="admin.nav.html"}
+
+<div class="page-container">
+	<form class="form form-horizontal" id="j_config_form">
+		<div id="tab-system" class="HuiTab">
+			<div class="tabBar cl" id="j_config_tabs">
+            	<span data-cont="base">基本设置</span>
+                <span data-cont="security">安全设置</span>
+                <span data-cont="email">邮件设置</span>
+                <span data-cont="other">其他设置</span>
+            </div>
+			{include file="admin/config/base.html"}
+            {include file="admin/config/security.html"}
+            {include file="admin/config/email.html"}
+            {include file="admin/config/other.html"}
+		</div>
+		<div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+				<button class="btn btn-primary radius" type="button" id="j_config_submit"><i class="Hui-iconfont">&#xe632;</i> 保存</button>
+				<button class="btn btn-default radius" type="button" id="j_config_cancel">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+			</div>
+		</div>
+	</form>
+</div>
+
+
+<script>
+	require(['admin/page.config']);
+</script>
+
+{include file="admin.footer.html"}

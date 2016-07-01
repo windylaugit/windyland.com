@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>wlDialog Demo</title>
+
+<link rel="stylesheet" href="wlDialog.all.css" />
+<script src="/s/libs/jquery/jquery.191.min.js"></script>
+<script src="wlDialog.js"></script>
+<style>
+.container{
+	margin:20px;
+	padding:20px;
+	border:2px solid #CCC;
+	min-height:6000px;	
+}
+
+</style>
+</head>
+<body>
+
+<div class="container">
+
+</div>
+<script>
+$(function(){
+	$.wlDialog.open({
+		title:'demo',
+		content:'<span style="color:red">this is a demo!!!</span>',
+		buttons:[
+			['确定',function(){alert('确定');}],
+			$.wlDialog.button.close('取消')
+		]
+	})
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+@charset "UTF-8";
+/**
+ * 前端全局样式，依据H-ui前端css框架为基础(已分离至main.base.css)
+ * @authors AndyLau (i@windyland.com)
+ * @date    2016-06-02 09:24:35
+ * @version $Id$
+ */
+body{
+	font-family: 'Microsoft Yahei';
+    color: #555;
+    background-color: #eaeaea;
+    position: relative;
+}
+/* 页宽元素 */ 
+.wp{
+	max-width:1200px;
+}
+/* 盒模型 */
+.bs-bb{box-sizing:border-box;}
+.bs-cb{box-sizing:content-box;}
+
+/* 顶部栏 */
+.page-header{
+	height: 60px;
+    background-color: #fff;
+    position: relative;
+	margin:0px;
+    z-index: 9;	
+}
+.page-header-logo{
+	display:block;
+	float:left;
+	width:300px;
+	height:60px;
+}
+.page-header-logo a{
+	display: block;
+    height: 60px;
+    width: 180px;
+    cursor: pointer;
+    text-indent: -9999em;
+    background: url('/s/images/logo.png') no-repeat center;	
+}
+.page-header-navs{
+	z-index:1;
+}
+.page-header-navs .nav-item{
+	float: left;
+    display: inline;
+    font-size: 16px;
+	height: 60px;
+    line-height: 60px;		
+}
+.page-header-navs .nav-item a{
+	display:inline-block;
+	height: 60px;
+    line-height: 60px;
+	padding:0 18px;
+}
+.page-header-navs .nav-item-active a,.page-header-navs .nav-item:hover a{
+	background-color: #3da9f7;
+	color:#FFF;
+    -webkit-transition: background-color 0.3s ease 0s;
+    -moz-transition: background-color 0.3s ease 0s;
+    -o-transition: background-color 0.3s ease 0s;
+    -ms-transition: background-color 0.3s ease 0s;
+    transition: background-color 0.3s ease 0s;	
+}
+
+/* 页面主体 */
+.page-container{
+	position: relative;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0;	
+}
+
+/* 页面底部 */
+.page-footer{
+    position: relative;
+    z-index: 9;
+    clear: both;
+    padding: 40px 30px;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: #999;
+    background-color: #fff;
+    border-top: 1px solid #eaeaea;		
+}
+
+/* 分页组件 */
+.pager{
+	margin: 0;
+    padding: 20px;
+    text-align: center;
+    font-size: 12px;
+    display: block;	
+}
+.pager ul{
+	display: inline-block;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+.pager li{
+	display:inline;	
+}
+.pager li>a,.pager li>span{
+	margin: 0 2px;
+    padding: 5px 12px;
+    background-color: #ddd;
+    color: #666;
+    border-radius: 2px;
+    opacity: .88;	
+}
+.pager li>span.pager-current{
+	background-color: #ff5f33;
+    color: #fff;	
+}
+
+/* 内容评论组件 */
+.comments-box{
+	background: #ffffff;
+    border-radius: 2px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.05);	
+	padding:20px;
+}
+.comments-header{
+	padding-bottom:10px;
+	border-bottom:1px solid #eee;
+	font-size: 22px;
+    line-height: 32px;
+}
+.comments-count{
+	font-weight: normal;
+    color: #f26013;
+	padding:0 5px;
+}
+.comments-reply{
+	padding:15px;
+	border-bottom:1px solid #eee;
+}
+.comments-reply-inner{
+	border: 2px solid #ccd4d9;
+    border-radius: 2px;
+    background-color: #fff;
+    position: relative;	
+}
+.comments-reply-cont{
+	padding:4px;
+}
+.comments-reply-cont textarea{
+	display:block;
+    resize: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    border: none;
+    line-height: 22px;
+    font-size: 14px;
+    outline: 0;
+    color: #666;
+	width:100%;
+    height: 68px;	
+}
+.comments-reply-ctrl{
+	background-color: #fbfbfb;
+    height: 30px;
+    border-top: solid 1px #f2f2f2;	
+}
+.comments-reply-metas{
+	
+}
+.comments-reply-name{
+	width:120px;
+}
+.comments-reply-submit{
+	margin-right:-2px;
+	margin-bottom:-2px;
+}
+.comments-list{
+	
+}
+
+
+

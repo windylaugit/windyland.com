@@ -1,0 +1,66 @@
+{include file="admin.header.html"}
+
+<article class="page-container" data-aid="{$article.aid}">
+	<form class="form form-horizontal" id="j_form">
+		<div class="row row-field cl">
+			<label class="form-label col-xs-4 col-sm-2" for="field_c_id"><span class="c-red">*</span>{$lang.fields.c_name}：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<select class="select" name="c_id" id="field_c_id">
+                    {foreach $columns as $c_id=>$col}
+                    <option value="{$c_id}" {$col.selected}>{$col.text}</option>
+                    {/foreach}
+                </select>
+			</div>
+		</div>
+		
+        <div class="row row-field cl">
+			<label class="form-label col-xs-4 col-sm-2" for="field_title"><span class="c-red">*</span>{$lang.fields.title}：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text"  name="title" class="input-text" value="{$article.title}" id="field_title" placeholder="输入文章的标题" >
+			</div>
+		</div>
+        
+        <div class="row row-field cl">
+			<label class="form-label col-xs-4 col-sm-2" for="field_keywords"><span class="c-red">*</span>{$lang.fields.keywords}：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text"  name="keywords" class="input-text" value="{$article.keywords}" id="field_keywords" placeholder="文章关键字,以空格分隔" >
+			</div>
+		</div>
+        
+        <div class="row row-field cl">
+			<label class="form-label col-xs-4 col-sm-2" for="field_author"><span class="c-red">*</span>{$lang.fields.author}：</label>
+			<div class="formControls col-xs-8 col-sm-9">
+				<input type="text"  name="author" class="input-text" value="{$article.author}" id="field_author" placeholder="文章作者" >
+			</div>
+		</div>
+        
+        <div class="row row-field cl">
+            <label class="form-label col-xs-4 col-sm-2" for="field_description">{$lang.fields.description}：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <textarea class="textarea" name="description" id="field_description" rows="2">{$article.description}</textarea>
+            </div>
+        </div>
+        
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-2" for="field_content">{$lang.fields.content}：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <textarea class="" name="content" id="field_content" style="height:400px;width:100%;">{$article.content}</textarea>
+            </div>
+        </div>
+        
+        
+        <div class="row cl">
+			<div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
+				<button class="btn btn-primary radius" type="button" id="j_submit"><i class="Hui-iconfont">&#xe632;</i>&nbsp;{$lang.save}</button>
+				<button class="btn btn-default radius" type="button" id="j_cancel">&nbsp;&nbsp;取消&nbsp;&nbsp;</button>
+			</div>
+		</div>
+	</form>
+</article>
+
+
+<script>
+	require(['admin/content/article.post']);
+</script>
+
+{include file="admin.footer.html"}

@@ -1,0 +1,24 @@
+@CHARSET "UTF-8";
+
+body{
+	font-family: 'microsoft yahei',Arial,sans-serif;
+	background-color:#F8F8F8;
+}
+.form-group{
+	position:relative;	
+}
+.form-group input{
+	padding-left:48px;
+}
+.login-icon{
+	position: absolute;
+	top: 6px;
+	left: 5px;
+	width:36px;
+	padding: 8px;
+	font-size: 20px;
+	color: #909090;
+	border-right: 1px solid #ccc;
+	z-index: 2;
+	
+}

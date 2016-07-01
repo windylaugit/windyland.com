@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN" itemscope="itemscope" itemtype="http://schema.org/WebPage">
+<head>
+<base id="base_url" href="{$base_url}">
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+{$SEO.metas}
+{$SEO.title}
+
+<!-- JavaScript resources -->
+<!--[if lt IE 9]>
+{res file='script:libs/html5.js'}
+{res file='script:libs/respond.min.js'}
+{res file='script:libs/PIE-2.0beta1/PIE_IE678.js'}
+<![endif]-->
+{res file='script:libs/require/require.js'}
+{res file='script:libs/require/require.config.js'}
+
+
+<!-- Stylesheet resources -->
+<!--
+{res file='link:libs/bootstrap/3.2.0/css/bootstrap.css'}
+{res file='link:libs/fontawesome/4.2.0/css/font-awesome.min.css'}
+-->
+{res file='link:h-ui/font/iconfont.css'}
+{res file='link:css/main.base.css'}
+{res file='link:css/main.css'}
+
+
+{if $WL_APPEND_RES}
+    {foreach $WL_APPEND_RES as $f=>$res}
+		{$res}    
+    {/foreach}
+{/if}
+<!-- import resources -->
+{$all_import_res}
+</head>
+<body>
+<header class="page-header">
+    <div class="wp cl">
+        <span class="page-header-logo">
+            <a href="{$site.base_url|default:'/'}" title="{$site.site_name}">{$site.site_name}</a>
+        </span>
+        <nav class="page-header-navs" role="navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement">
+        	<ul class="cl">
+                {foreach $navs as $k=>$v}
+                <li data-item-id="{$k}" class="nav-item {if $v.active}nav-item-active{/if}">
+                	<a href="{$v.href}" >{$v.text}</a>
+                {/foreach}
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+

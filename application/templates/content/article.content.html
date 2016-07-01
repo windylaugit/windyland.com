@@ -1,0 +1,67 @@
+{res file='link:css/content/common.css' append=1}
+{include file="header.html"}
+
+
+<div class="page-container">
+	<div class="wp cl mt-30">
+        <div class="w-930 mr-20 l">
+        	<section class="cont-main">
+                <article data-id="{$cont.aid}" class="" itemtype="http://schema.org/Article">
+                	<header>
+                    	<div class="cont-breadcrumbs">
+                            <i class="Hui-iconfont-home2"></i>&nbsp;
+                            {foreach $breadCrumbs as $k=>$v}
+                                {if $v.isLast}
+                                <span>{$v.text}</span>
+                                {else}
+                                <a href="{$v.href|default:'javascript:;'}">{$v.text}</a>&nbsp;&gt;&nbsp;
+                                {/if}
+                            {/foreach}
+                        </div>
+                        <div class="cont-head cl">
+                        	<div class="cont-title l w-800">
+                            	<h1>{$cont.title}</h1>
+                            </div>
+                            <div class="cont-statistics">
+                            	<span>阅读&nbsp;4658次</span>
+                                <span>点赞&nbsp;123次</span>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="cont-description">
+                        <p>{$cont.description}</p>
+                    </div>
+                    
+                    <div class="cont-cont f-16 mt-10">
+                        {$cont.content}
+                    </div>
+                    
+                </article>
+            </section>
+            
+            <section class="cont-share">
+            Here is the share
+            </section>
+            
+            {if $cont.allow_comments}
+            <section class="cont-comments mt-20">{include file="comment/content.html" cont_id=$cont.cont_id}</section>
+            {/if}
+        </div>
+        <aside class="w-250 l">
+        	Here is the side
+        </aside>
+	</div>
+</div>
+
+
+
+<script>
+	define('PAGEVAL',function(){
+		return {
+				useComment:'{if $cont.allow_comments}true{/if}'
+			};
+	});
+	require(['js/content/article.view']);
+</script>
+
+{include file="footer.html"}

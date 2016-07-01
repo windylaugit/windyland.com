@@ -1,0 +1,34 @@
+
+@font-face {font-family: "ds-iconfont";
+  src: url('iconfont.eot'); /* IE9*/
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff') format('woff'), /* chrome、firefox */
+  url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('iconfont.svg#ds-iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.ds-iconfont {
+  font-family:"ds-iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.ds-icon-jian:before { content: "\1610"; }
+.ds-icon-blacklist:before { content: "\e609"; }
+.ds-icon-pei:before { content: "\e600"; }
+.ds-icon-pi:before { content: "\e601"; }
+.ds-icon-que:before { content: "\e602"; }
+.ds-icon-service:before { content: "\e603"; }
+.ds-icon-shou:before { content: "\e604"; }
+.ds-icon-tao:before { content: "\e605"; }
+.ds-icon-tong:before { content: "\e606"; }
+.ds-icon-tui:before { content: "\e607"; }
+.ds-icon-zeng:before { content: "\e608"; }
+.ds-icon-he:before { content: "\e60a"; }
+.ds-icon-jing:before { content: "\e60b"; }
+.ds-icon-chai:before { content: "\e60c"; }
+.ds-icon-dai:before { content: "\e60d"; }
+.ds-icon-daifu:before { content: "\e60e"; }
+.ds-icon-link:before { content: "\e60f"; }

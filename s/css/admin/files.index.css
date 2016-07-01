@@ -1,0 +1,142 @@
+
+
+.files-btn-upload{
+	position:relative;
+	overflow:hidden;	
+    width: 110px;
+}
+.files-btn-upload-ipt{
+    position: absolute;
+    left: -100px;
+    top: 0;
+    z-index: 1;
+    display: block;
+    width: 210px;
+    height: 30px;
+    filter: alpha(opacity=0);
+    -moz-opacity: 0;
+    opacity: 0;
+    cursor: pointer;	
+}
+.files-btn-upload-text{
+	
+}
+
+.files-list{
+	padding:10px;
+	overflow-y:auto;
+	border:1px solid #EEE;
+}
+.file-item{
+	position:relative;
+	float:left;
+	background:#FFF;
+	width:130px;
+	height:130px;
+}
+.file-item+.file-item{
+	margin-left:10px;
+	margin-bottom:10px;
+}
+
+.file-item-prev{
+	width:128px;
+	height:128px;
+	line-height:128px; 
+	border:1px solid #DDD;	
+	overflow:hidden;
+}
+.file-item-prev img{
+	cursor:pointer;
+	width:128px;
+	vertical-align: middle;
+    line-height: 128px;
+}
+[class*="file-type-"].file-item-prev{
+	background:#FFF;
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+.file-type-png.file-item-prev{
+	background-image:url(../../images/ftypes/png.png);	
+}
+.file-item-title{
+    display: block;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+	border:1px solid #DDD;
+	border-top:0px;
+	overflow: hidden;
+}
+
+.file-item-selected-tag{
+	position:absolute;
+	left:0;
+	top:0;
+	width:32px;
+	height:32px;
+	display:none;
+}
+.file-item-selected-tag:before{
+	position:absolute;
+	left:0;top:0;
+	z-index: 1;
+	content: '√';
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	line-height:20px;
+	width:20px;
+	height:20px;
+	text-align:center;
+}
+.file-item-selected-tag:after{
+	position:absolute;
+	left:0;top:0;
+	z-index: 0;
+	content: '';
+	border-width: 16px;
+	border-style:solid solid dashed dashed;
+	border-color:#5a98de transparent transparent #5a98de;
+	font-size: 0;
+	width: 0;
+	height: 0;
+	line-height: 0;	
+}
+
+
+.file-item-selected .file-item-prev{	
+	border-color:#5a98de;
+}
+.file-item-selected .file-item-selected-tag{
+	display:block;	
+}
+
+.files-panel{
+	height:118px;
+	border:1px solid #EEE;
+	border-top:0px;
+	background:#FFF;
+}
+.files-panel .row{
+	margin-top:0px;
+}
+.files-panel>.row{
+	margin-left:0px;
+	margin-right:0px;
+}
+
+.files-panel-info>.row{
+	margin-top:15px;
+}
+
+.files-panel-btns{
+	
+}
+.files-panel-btns>button{
+	display:block;
+	margin-top:15px;
+}
+
+

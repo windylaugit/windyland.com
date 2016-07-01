@@ -1,0 +1,14 @@
+<div class="tabCon" id="j_config_cont_security">
+    <div class="row cl">
+        <label class="form-label col-xs-4 col-sm-2">允许访问后台的IP列表：</label>
+        <div class="formControls col-xs-8 col-sm-9">
+            <textarea class="textarea" name="white_ips">{$config.white_ips}</textarea>
+        </div>
+    </div>
+    <div class="row cl">
+        <label class="form-label col-xs-4 col-sm-2">后台登录失败最大次数：</label>
+        <div class="formControls col-xs-8 col-sm-9">
+            <input type="text"  name="max_failed_login"  class="input-text" value="{$config.max_failed_login|default:5}">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+{include file="admin/header.html"}
+
+<div class="main-content">
+	<div class="page-header">
+    	<button type="button" class="btn btn-default" id="backupAll">{$lang.backup_all}</button>
+        <button type="button" class="btn btn-default" id="backupSelected">{$lang.backup_selected}</button>
+    </div>
+	<div class="row">
+    	<div class="col-xs-12">
+        	<div class="table-responsive" id="table_list">
+            	
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+	define('PAGEVAL',function(){
+		return {
+				baseUrl:'/admin/database/',
+				columns_json:'{$columns_json}'
+			}
+	});
+	require(['admin/page.database']);
+</script>
+
+{include file="admin/footer.html"}

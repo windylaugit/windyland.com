@@ -1,0 +1,61 @@
+@charset "UTF-8";
+/**
+ * 首页样式
+ * @authors AndyLau (i@windyland.com)
+ * @date    2016-06-02 09:24:35
+ * @version $Id$
+ */
+
+.index-box{
+	margin: 0;
+    background: #fff;
+}
+.index-box-title{
+	padding: 10px 15px;
+    font-size: 18px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+.index-box-title h4{
+	margin:0;
+}
+
+.index-box-cont{
+	
+}
+
+/* 热点推荐 */
+.index-recommend .index-box-cont{
+	background: #eee;
+    overflow: hidden;
+    padding: 0;
+    margin-right: -1px;	
+}
+
+.index-recommend-item{
+	width: 20%;
+    margin: 0;
+    float: left;
+    position: relative;
+    padding: 15px 8px;
+	text-align: center;
+    background: #fff;
+    border-right: 1px solid #eee;
+}
+.index-recommend-item h4{
+	font-size: 16px;
+    font-weight: bold;	
+}
+.index-recommend-item p{
+	font-size: 12px;
+    font-color: #999;
+    height: 34px;	
+}
+.index-recommend-item-meta{
+    text-align: center;
+    padding: 10px 10px 0;	
+}
+.index-recommend-item-meta a{
+	display: inline-block;
+	position:relative;	
+}

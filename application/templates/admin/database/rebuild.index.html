@@ -1,0 +1,26 @@
+{include file="admin/header.html"}
+
+<div class="main-content">
+	<div class="page-header">
+    	
+    </div>
+	<div class="row">
+    	<div class="col-xs-12">
+        	<div class="table-responsive" id="backup_list">
+            	
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+	define('PAGEVAL',function(){
+		return {
+				columns_json:'{$columns_json}'
+			}
+	});
+	require(['admin/page.database.rebuild']);
+</script>
+
+{include file="admin/footer.html"}

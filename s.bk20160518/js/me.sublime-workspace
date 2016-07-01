@@ -1,0 +1,363 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"defer",
+				"Deferred"
+			],
+			[
+				"res",
+				"resize	.resize()"
+			],
+			[
+				"in",
+				"inarray	$.inArray()"
+			],
+			[
+				"g",
+				"get	$.get()"
+			],
+			[
+				"conso",
+				"console.dir();"
+			],
+			[
+				"cons",
+				"console.dir();"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"proc",
+				"process.exit(code);"
+			],
+			[
+				"update",
+				"updateCell"
+			],
+			[
+				"item",
+				"item_id"
+			],
+			[
+				"edi",
+				"editRealPurNums"
+			],
+			[
+				"re",
+				"real_pur_nums"
+			],
+			[
+				"pur",
+				"purchase_id"
+			],
+			[
+				"cont",
+				"controllers"
+			],
+			[
+				"_c",
+				"_ctrls_path"
+			],
+			[
+				"w",
+				"writeHead"
+			],
+			[
+				"l",
+				"l"
+			],
+			[
+				"se",
+				"segments"
+			],
+			[
+				"path",
+				"pathname"
+			],
+			[
+				"loa",
+				"loaded_cfgs"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "Package Control: in",
+		"selected_items":
+		[
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Discover Packages"
+			],
+			[
+				"tpl",
+				"Tmpl: Create javascript"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"create",
+				"Create file from Template"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Object Value JS"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 414.0,
+		"history":
+		[
+			"var",
+			"window",
+			"cls()",
+			"cls",
+			"clear",
+			"nodemon",
+			"taskkill",
+			"exec(\"taskkill /F /IM node.exe\");",
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/DSproject/crm_admin/statics/script/conf/market/notice.index.js",
+		"/E/DSproject/crm_admin/statics/lib/jquery.min.js",
+		"/E/DSproject/crm_admin/statics/lib/jquery.min-beutify.js",
+		"/E/DSproject/crm_admin/statics/script/jquery.min.js",
+		"/E/DSproject/crm_admin/statics/script/conf/custom/custom-select.js",
+		"/E/DSproject/crm_admin/statics/script/conf/custom/select.index.js",
+		"/E/DSproject/crm_admin/statics/script/conf/market/dscoins-index.js",
+		"/E/DSproject/crm_admin/statics/script/conf/custom/serviceMailLog.toSend.js",
+		"/E/DSproject/crm_admin/statics/script/conf/custom/serviceMailLog.index.js",
+		"/E/DSproject/crm_admin/statics/script/crm/base.201510.js",
+		"/E/SublimeText3-Projects/diansanCRM.sublime-project",
+		"/E/SublimeText3-Projects/diansanERP.sublime-project",
+		"/E/DSproject/diansan_erp/s1.diansan.com/js/conf/statistics/sale/goodsStatistic.index.js",
+		"/E/DSproject/diansan_erp/s1.diansan.com/js/conf/goods/inventory-index.js",
+		"/E/DSproject/diansan_erp_nodejs/bin/router.js",
+		"/E/DSproject/diansan_erp_nodejs/app/core/output.js",
+		"/E/DSproject/diansan_erp_nodejs/app/core/input.js",
+		"/E/DSproject/diansan_erp_nodejs/app/core/middleware.js",
+		"/E/DSproject/diansan_erp_nodejs/config/config.js",
+		"/E/DSproject/diansan_erp_nodejs/config/util.js",
+		"/E/DSproject/diansan_erp_nodejs/bin/server.js",
+		"/C/Users/admin/AppData/Roaming/Sublime Text 3/Packages/NodeJS/Nodejs.sublime-build",
+		"/E/DSproject/diansan_erp_nodejs/app/app.js",
+		"/C/Users/admin/AppData/Roaming/Sublime Text 3/Packages/NodeJS/Nodejs.sublime-settings",
+		"/E/DSproject/diansan_erp_nodejs/node_modules/nodemon/bin/nodemon.js",
+		"/D/CommSoft/FlashFxp/Cache/~flashfxp/EEF9BFBA_edit.tmp/config.js",
+		"/E/DSproject/diansan_erp_nodejs/app/output.js",
+		"/E/DSproject/diansan_erp_nodejs/app/core/view.js",
+		"/C/Users/admin/AppData/Roaming/Sublime Text 3/Packages/SublimeTmpl/templates/js.tmpl",
+		"/E/DSproject/diansan_erp_nodejs/bin/util.js",
+		"/E/DSproject/diansan_erp_nodejs/grace/bin/util.js",
+		"/E/DSproject/diansan_erp_nodejs/grace/bin/server.js",
+		"/C/Users/admin/AppData/Roaming/Sublime Text 3/Packages/SublimeTmpl/Default.sublime-commands",
+		"/C/Users/admin/AppData/Roaming/Sublime Text 3/Packages/SublimeTmpl/SublimeTmpl.sublime-settings",
+		"/C/Users/admin/AppData/Roaming/Sublime Text 3/Packages/SublimeTmpl/Main.sublime-menu",
+		"/C/Users/admin/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/admin/AppData/Roaming/Sublime Text 3/Packages/SublimeTmpl/Default (Windows).sublime-keymap",
+		"/C/Users/admin/AppData/Roaming/Sublime Text 3/Packages/User/Nodejs.sublime-settings",
+		"/C/Users/admin/AppData/Roaming/Sublime Text 3/Packages/Nodejs/Nodejs.sublime-settings",
+		"/E/DSproject/diansan_erp_nodejs/package.json",
+		"/E/DSproject/diansan_erp_nodejs/grace/src/app.js",
+		"/C/Users/admin/AppData/Roaming/Sublime Text 3/Installed Packages/Nodejs.sublime-package",
+		"/E/DSproject/diansan_erp_nodejs/grace/package.json",
+		"/E/DSproject/diansan_erp_nodejs/config/main.js",
+		"/E/DSproject/diansan_erp_nodejs/src/app.js",
+		"/E/DSproject/diansan_erp/s1.diansan.com/js/conf/purchase/inspection.viewsider.js",
+		"/E/DSproject/diansan_erp_nodejs/core/server.js",
+		"/E/DSproject/diansan_erp_nodejs/core/loader.js",
+		"/E/DSproject/diansan_erp_nodejs/core/output.js",
+		"/E/DSproject/diansan_erp_nodejs/core/input.js",
+		"/E/DSproject/diansan_erp_nodejs/core/base.object.js",
+		"/E/DSproject/diansan_erp_nodejs/controllers/sohumail/webhook.js",
+		"/E/DSproject/diansan_erp_nodejs/core/base.controller.js",
+		"/E/DSproject/diansan_erp_nodejs/core/router.js",
+		"/E/DSproject/diansan_erp_nodejs/start.js",
+		"/E/DSproject/diansan_erp_nodejs/helpers/common.js",
+		"/C/Users/admin/AppData/Roaming/Sublime Text 3/Packages/User/SublimeTmpl.sublime-settings",
+		"/E/DSproject/diansan_erp_nodejs/config/server.js",
+		"/C/Users/admin/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/admin/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"c",
+			" b(e);",
+			" b(e)",
+			",b(e)",
+			"header",
+			"exec",
+			"l",
+			"_requireds"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"t",
+			"_loadeds"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "me.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"E:\\SublimeText3-Projects\\diansanERP.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 201.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -1,0 +1,39 @@
+@CHARSET "UTF-8";
+
+
+@font-face {font-family: "wlg-iconfont";
+  src: url('./font/iconfont.eot?t=1463972505'); /* IE9*/
+  src: url('./font/iconfont.eot?t=1463972505#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('./font/iconfont.woff?t=1463972505') format('woff'), /* chrome, firefox */
+  url('./font/iconfont.ttf?t=1463972505') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('./font/iconfont.svg?t=1463972505#wl-iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.wlg-sort-asc:before,.wlg-sort-desc:after,.wlg-sort-all:before,.wlg-sort-all:after{
+	font-family:"wlg-iconfont" !important;
+	font-size:16px;
+	font-style:normal;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke-width: 0.2px;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.wlg-sort-desc:after{ content: "\1001"; }
+.wlg-sort-asc:before{ content: "\1002"; }
+
+.wlg-sort-all:before{ content: "\1001"; }
+.wlg-sort-all:after{ content: "\1002"; }
+
+.wlg-thead th{
+	background-color: #f5fafe;
+    border-bottom: 1px solid #DDD;
+}
+
+.wlg-table .wlg-col-number{
+	width:28px;
+	text-align:right;
+}
+.wlg-table .wlg-col-checkbox{
+	width:28px;
+	text-align:center;
+}

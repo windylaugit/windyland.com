@@ -1,0 +1,60 @@
+{res file='link:css/content/common.css' append=1}
+{include file="header.html"}
+
+
+<div class="page-container">
+	<div class="wp cl mt-30">
+        <div class="w-930 mr-20 l">
+        	<section class="list-header radius">
+            	<div class="list-header-breadcrumbs">
+                	<i class="Hui-iconfont-home2"></i>&nbsp;
+                    {foreach $breadCrumbs as $k=>$v}
+                    	{if $v.isLast}
+                        <span>{$v.text}</span>
+                        {else}
+                        <a href="{$v.href|default:'javascript:;'}">{$v.text}</a>&nbsp;&gt;&nbsp;
+                        {/if}
+                    {/foreach}
+                </div>
+                
+                <div class="list-header-filters">
+                	Here is the list filters
+                </div>
+            </section><!-- end of list-header -->
+            
+            <section class="list-cont mt-20">
+            	{foreach $list as $k=>$art}
+                <article data-id="{$art.aid}" class="list-item list-article{if $art.thumb_image_url} list-item-has-image{/if}" itemtype="http://schema.org/Article">
+                	{if $art.thumb_image_url}
+                    <a href="{$art.url}" class="list-item-image">
+                    	<img src="{$art.thumb_image_url}" alt="{$art.title}" />
+                    </a>
+                    {/if}
+                    <header>
+                    	<a href="{$art.url}" title="{$art.title}" target="_blank" itemprop="url" rel="bookmark">{$art.title}</a>
+                    </header>
+                    <p class="list-item-desc">{$art.description}</p>
+                    <p class="list-item-meta">
+                    	<time itemprop="datePublished">{$art.up_time}</time>
+                    </p>
+                </article>
+                {/foreach}
+                <div class="list-pager">
+                {include file="pager.html" pager=$pager}
+                </div>   
+            </section>
+            
+        </div>
+        <aside class="w-250 l">
+        	Here is the side
+        </aside>
+	</div>
+</div>
+
+
+
+<script>
+	//require(['admin/page.index']);
+</script>
+
+{include file="footer.html"}

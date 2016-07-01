@@ -1,0 +1,32 @@
+<div class="pager">
+	<ul>
+    	<li class="pager-prev">
+        	{if $pager.prev}
+        	<a href="{$pager.prev.url}">上一页</a>
+            {else}
+            <span>上一页</span>
+            {/if}
+       	</li>
+        {foreach $pager.list as $k=>$p}
+        <li>
+        	{if $p.is_ellipsis}
+            <span> ... </span>
+            {elseif $p.current}
+            <span class="pager-current">{$p.page}</span>
+            {else}
+            <a href="{$p.url}">{$p.page}</a>
+            {/if}
+        </li>
+        {/foreach}
+        <li class="pager-next">
+        	{if $pager.next}
+        	<a href="{$pager.next.url}">下一页</a>
+            {else}
+            <span>下一页</span>
+            {/if}
+       	</li>
+        <li>
+        	<span>共 {$pager.pages} 页</span>
+        </li>
+    </ul>
+</div>
